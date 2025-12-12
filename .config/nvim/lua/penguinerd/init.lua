@@ -9,10 +9,14 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Copy Cut 
-vim.api.nvim_set_keymap('v', '<C-S-c>', '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<C-S-y>', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-y>', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-S-x>', '"+d', { noremap = true, silent = true })
+
+-- Folding
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.o.foldlevel = 99
+vim.o.foldenable = true
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"

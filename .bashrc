@@ -12,10 +12,13 @@ PS1='[\u@\h \W]\$ '
 # dotfiles
 alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
-# Start ssh-agent if not running
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+# Start ssh-agent if not already running
+if [ -z "$SSH_AGENT_PID" ]; then
     eval "$(ssh-agent -s)"
 fi
 
-# Add your key (will prompt once per login)
-ssh-add -q ~/.ssh/id_ed25519
+# Add the key if it hasn't been added yet
+ssh-add -l &>/dev/null
+if [ $? -ne 0 ]; then
+    ssh-add ~/.ssh/id_ed25519
+fi
