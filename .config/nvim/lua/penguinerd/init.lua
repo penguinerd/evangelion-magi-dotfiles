@@ -1,6 +1,11 @@
 -- print("hello from penguinerd")
 
--- mapleader keybind: <space>
+-- disable netrw (required by nvim-tree)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+
+-- Mapleader Keybind: <space>
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
