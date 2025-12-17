@@ -1,0 +1,33 @@
+Keybinds
+
+>>> System
+- Ctrl + y: system copy
+- Ctrl + Shift + v: system paste
+- Ctrl + Shift + x: system cut
+
+>>> Fuzzy Finder (telescope)
+- <space>ff: find file
+- <space>gf: git files
+- <space>fp: find project (grep search)
+
+- :FF
+- :GF
+- :FP
+
+>>> Vimtex
+- :VimtexInfo
+- :VimtexCompile
+- :VimtexView
+- :VimtexStop
+- :VimtexClean
+
+>>> Nvim Tree
+- Ctrl + n: toggle file tree
+- Enter: open file
+- a: create file/folder
+- d: delete
+- r: rename
+- y: copy
+- x: cut
+- p: paste
+- R: refresh
