@@ -1,4 +1,4 @@
--- print("hello from penguinerd")
+-- ("hello from penguinerd")
 
 -- disable netrw (required by nvim-tree)
 vim.g.loaded_netrw = 1
