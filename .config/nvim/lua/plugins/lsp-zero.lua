@@ -23,13 +23,17 @@ return {
 		require("mason").setup()
 		require("mason-lspconfig").setup({
 			ensure_installed = {
-				"pyright",
-				"tsserver",
-				"clangd",
-				"rust_analyzer",
+				"pyright", -- python
+				"clangd", -- C/C++
+
+				"ts_ls", -- javascript/typescript
+				"tailwindcss",
+				"eslint", 
+				"prettierd",
 			},
 		})
 
 		lsp.setup()
+	
 	end
 }

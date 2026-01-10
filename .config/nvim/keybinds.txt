@@ -1,7 +1,8 @@
 Keybinds
 
 >>> System
-- Ctrl + y: system copy
+- Ctrl + y: system copy in nvim
+- Ctrl + Shift + c: copy in terminal
 - Ctrl + Shift + v: system paste
 - Ctrl + Shift + x: system cut
 
@@ -23,6 +24,9 @@ Keybinds
 
 >>> Nvim Tree
 - Ctrl + n: toggle file tree
+- Ctrl + w + w: cycle windows
+- Ctrl + w + h: switch from file to tree
+- Ctrl + w + l: switch from tree to file
 - Enter: open file
 - a: create file/folder
 - d: delete

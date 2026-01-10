@@ -18,7 +18,7 @@ if [ -z "$SSH_AGENT_PID" ]; then
 fi
 
 # Add the key if it hasn't been added yet
-ssh-add -l &>/dev/null
-if [ $? -ne 0 ]; then
-    ssh-add ~/.ssh/id_ed25519
-fi
+# ssh-add -l &>/dev/null
+# if [ $? -ne 0 ]; then
+# 	 ssh-add ~/.ssh/id_ed25519
+# fi
